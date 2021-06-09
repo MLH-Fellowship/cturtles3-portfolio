@@ -52,3 +52,4 @@ Finally Copy and paste the address it’s running on into the browser to see the
 Get to know our MLH Fellows by clicking on any one of icons to show what we're made of!
 
 Technologies & its purpose
+Inspirations 
