@@ -4,7 +4,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/styles.css" type="text/css">
+    <link rel="stylesheet" href="../static/styles/styles.css" type="text/css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <script>
@@ -29,7 +29,7 @@
 <!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
 <div> 
     <!-- Having trouble inputting variable for each picture: -->
-        <img src="{{ url_for('static', filename = name + '.png' )}}" width="250" height="300">
+        <img src="{{ url_for('static', filename = 'media/' + name + '.png' )}}" width="300" height="300">
 
 </div>
 <div>
