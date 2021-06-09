@@ -15,4 +15,4 @@ def about():
     return render_template("about.html")
 
 if __name__ == "__main__":
-    app.run(port="5002")
+    app.run(debug=True,port="5002")
