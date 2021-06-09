@@ -24,8 +24,20 @@
     </script>
 </head>
 <!-- About Me Block -->
+
+<!-- Please add your profile pic in static folder -->
+<!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
+<div> 
+    <!-- Having trouble inputting variable for each picture: -->
+        <img src="{{ url_for('static', filename = name )}}" width="250" height="300">
+
+</div>
 <div>
-    <h1>Hi! I'm **Name***</h1>
+    <h1>Hi! I'm {{name}}</h1>
+        <p>
+        <!-- Summary --> 
+        I am an MLH fellow.
+        </p>
 </div>
 
 <!-- Projects Block -->
