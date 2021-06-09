@@ -9,10 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="../static/normalize.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <link href="../static/home.css" rel="stylesheet">
 </head>
 <body>
     <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+        <!--Expand navbar when on mobile-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Nav items-->
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-white" id="meet-team" href="/meet-team">Meet the Team</a>
+                <a class="nav-item nav-link text-white" id="cris" href="/cris">Cristopher</a>
+                <a class="nav-item nav-link text-white" id="nhi" href="/nhi">Nhi</a>
+                <a class="nav-item nav-link text-white" id="yenyu" href="/yenyu">Yenyu</a>
+            </div>
+        </div>
+    </nav>
 
     <!--Hero-->
     <div id="hero">
@@ -29,9 +46,25 @@
     </div>
 
     <!--Meet the Team-->
+    <div id="meet-team">
+        <h2>Meet the Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Cristopher Cejudo</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Nhi Mai-Do</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Yenyu Huang</h3>
+            </div>
+        </div>
+    </div>
 
     <!--Footer-->
     
     <script src="../static/home.js"></script>
+    <!--Boostrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

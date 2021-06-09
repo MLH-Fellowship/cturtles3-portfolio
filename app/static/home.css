@@ -12,13 +12,43 @@
 
 }
 
+.navbar #navbar{
+    z-index: 20;
+    justify-content: flex-end;
+}
+
+/* nav links */
+.navbar-nav{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    padding-right: 2rem;
+}
+
+.nav-item{
+    margin: 0 1.5rem 0 1.5rem;
+}
+
 #hero{
     height: 100vh; /* stretch to full height of browser */
     width: 100%;
-    background: var(--secondary-background);
+    background: var(--primary-background);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* dark overlay */
+
+#hero::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--dark-heading) 0.75;
+    z-index: 10;
 }
 
 
