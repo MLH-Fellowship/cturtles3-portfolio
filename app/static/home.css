@@ -1,5 +1,5 @@
 :root{
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
     /* background colours */
     --primary-background: #fffffe;
     --secondary-background: #e3f6f5;
@@ -73,8 +73,8 @@
 }
 
 #hero .text-overlay h1{
-    /* font-family: 'Lato', sans-serif; */
-    font-size: 2em; /* mobile first development */
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem; /* mobile first development */
     font-weight: 700;
     margin-bottom: 5rem;
     padding-bottom: none;
@@ -126,25 +126,23 @@
     background-color: var(--primary-background);
     color: var(--dark-text);
     text-align: center;
-    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
 
     /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
-/* .team-subheading{
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-    position: fixed;
-    width: 100%;
-} */
+#meet-team h2{
+    /* font-family: 'Lato', sans-serif; */
+    font-size: 4.5rem;
+    font-weight: 900;
+}
 
 .fellows-container{
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 .fellow{
@@ -152,8 +150,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 4rem;
 }
 
-#meet-team img{
+#meet-team .fellow-headshot{
     border-radius: 50%;
+}
+
+.fellow-headshot:hover{
+    opacity: 0.3;
+}
+
+#meet-team h3{
+    font-weight: 700;
+    font-size: 2.75rem;
+    padding: 2rem 0;
+}
+
+#meet-team button{
+    background-color: var(--yellow-button);
+    border: var(--yellow-button);
+    color: var(--dark-text);
+    font-size: 1.5rem;
+}
+
+#meet-team button:hover{
+    background-color: var(--dark-text);
+    color: var(--light-text);
 }
