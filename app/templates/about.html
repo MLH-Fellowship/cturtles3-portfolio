@@ -29,7 +29,7 @@
 <!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
 <div> 
     <!-- Having trouble inputting variable for each picture: -->
-        <img src="{{ url_for('static', filename = name )}}" width="250" height="300">
+        <img src="{{ url_for('static', filename = name + '.png' )}}" width="250" height="300">
 
 </div>
 <div>
