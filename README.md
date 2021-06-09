@@ -1,6 +1,10 @@
 # cturtles3-portfolio
 This explains how to install Flask in a virtual testing environment and create a simple Flask application only on on Linux and MacOS.
 
+Purpose:
+
+
+
 ### Prereq: **Make sure you have python3 and pip installed**
 
 ## Installation
@@ -46,3 +50,5 @@ Finally Copy and paste the address it’s running on into the browser to see the
 
 ### About the Website:
 Get to know our MLH Fellows by clicking on any one of icons to show what we're made of!
+
+Technologies & its purpose
