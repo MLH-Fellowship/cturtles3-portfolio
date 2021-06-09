@@ -44,24 +44,24 @@
 #hero .text-overlay h1{
     font-size: 2em; /* mobile first development */
     font-weight: 900;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5rem;
+    padding-bottom: none;
 }
 
 #hero .text-overlay h2{
     font-size: 1.5em; /* mobile first development */
     font-weight: 400;
-    margin: 0;
 }
 
 /* responsive text */
 /* phone */
 @media screen and (min-width: 768px){
     #hero .text-overlay h1{
-        font-size: 2.5rem;
+        font-size: 7rem;
     }
 
     #hero .text-overlay h2{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
 }
@@ -69,7 +69,7 @@
 /* tablet */
 @media screen and (min-width: 992px){
     #hero .text-overlay h1{
-        font-size: 3rem;
+        font-size: 10rem;
     }
 
     #hero .text-overlay h2{
@@ -81,7 +81,7 @@
 /* desktop */
 @media screen and (min-width: 1200px){
     #hero .text-overlay h1{
-        font-size: 4rem;
+        font-size: 15rem;
     }
 
     #hero .text-overlay h2{
