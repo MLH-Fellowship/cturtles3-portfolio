@@ -1,0 +1,73 @@
+{
+    "nhi" : {
+        "name" : "",
+        "about" : "",
+        "image" : "",
+        "projects" : [
+            {
+                "title": "",
+                "description": "",
+                "image": "",
+                "link": ""
+            }
+        ],
+        "social" : [
+            {
+                "name" : "",
+                "val" : ""
+            }
+        ]
+    },
+
+    "yenyu" : {
+        "name" : "",
+        "about" : "",
+        "image" : "",
+        "projects" : [
+            {
+                "title": "",
+                "description": "",
+                "image": "",
+                "link": ""
+            }
+        ],
+        "social" : [
+            {
+                "name" : "",
+                "val" : ""
+            }
+        ]
+    },
+
+    "cristopher" : {
+        "name" : "Cristopher Cejudo",
+        "about" : "I am a third year Computational Engineering student at Tecnológico de Monterrey CSF with an interest in Full-Stack development, Cloud, and Machine Learning. Experienced with different technologies, quick learner and adaptable. \nI believe that the skills that I have acquire from different work experiences make me a good leader, and I am always trying to apply and polish them in any opportunity that comes in my way.",
+        "image" : "",
+        "projects" : [
+            {
+                "title": "Knowledge Rally",
+                "description": "Knowledge Rally is a contest based on points where participants answer questions based on knowledge from various categories: History, Science, Training, Sports, and Geography.",
+                "image": "https://picsum.photos/302",
+                "link": "https://github.com/ccejudo"
+            },
+            {
+                "title": "S.E.R",
+                "description": "Multi platform mobille application that helps the users to become aware of how they dispose their waste and how to do it in a proper way",
+                "image": "https://picsum.photos/301",
+                "link": "https://github.com/ccejudo"
+            },
+            {
+                "title": "Face Alignment System",
+                "description": "Multipataform C++ project that align a face of an input image by identifying the eyes region to obtain a translation, scale and angle to transform the image into a normalized and rotated representation of the face.",
+                "image": "https://picsum.photos/300",
+                "link": "https://github.com/ccejudo"
+            }
+        ],
+        "social" : [
+            {
+                "name" : "",
+                "val" : ""
+            }
+        ]
+    }
+}
