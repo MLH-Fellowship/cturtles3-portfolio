@@ -12,14 +12,14 @@
             },
             {
                 "title": "Don't Fear the Reaper!",
-                "description": "A 2D hide n' seek game, taking place in the grim reaper's catacombs. You can play as the grim reaper where the objective is to hunt down the TBD (To Be Deceased) and harvest their soul. Or you can play as the TBD, with a goal of escaping the catacombs before the reaper finds you.",
+                "description": "A 2D hide n' seek game, where you can play as the grim reaper where the objective is to hunt down the TBD (To Be Deceased). Or, you can play as the TBD, with a goal of escaping the reaper's catacombs before he finds you.",
                 "image": "../static/media/reaper.png",
                 "link": "https://github.com/n-maido/dont-fear-the-reaper"
             },
             {
                 "title": "The Education Game",
                 "description": "An educational game for children with autism, intended to improve their development in 3 skill areas: arithmetic, emotion recognition, and fine motor skills.",
-                "image": "",
+                "image": "../static/media/education.jpg",
                 "link": "https://github.com/n-maido/the-education-game"
             }
         ],

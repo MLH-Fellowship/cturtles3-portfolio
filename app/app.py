@@ -9,12 +9,9 @@ data_file.close()
 
 #Create URL routes
 @app.route('/')
-def hello():
-    return render_template("home.html")
-
-@app.route('/home')
 def home():
-    return render_template("home.html")
+    userData = data
+    return render_template("home.html", userData=userData)
 
 #Create URL for each members
 @app.route('/about/<string:name>')
