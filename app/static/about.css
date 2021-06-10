@@ -1,0 +1,26 @@
+.aboutUsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+.profilepic {
+    flex: 0;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.circleImg {
+    width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius:50%;
+  
+}
+
+.description {
+    margin-left: 80px;
+    margin-top: 50px;
+}
+

@@ -10,7 +10,7 @@ data_file.close()
 #Create URL routes
 @app.route('/')
 def hello():
-    return 'Hello, World!'
+    return render_template("home.html")
 
 @app.route('/home')
 def home():
@@ -25,4 +25,4 @@ def about(name):
 
 if __name__ == "__main__":
     # rid (port="5002") within run function
-    app.run(debug=True, port=5002) 
+    app.run(debug=True) 
