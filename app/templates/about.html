@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css" type="text/css">
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+
+        $(function() {
+    
+    
+       var people = [];
+    
+       $.getJSON('../data.json', function(data) {
+            console.log(data);
+       }).fail(function(){
+            console.log("An error has occurred.")
+       });
+    
+    });
+    </script>
+</head>
 <!-- About Me Block -->
 
 <!-- Please add your profile pic in static folder -->
 <!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
 <div> 
     <!-- Having trouble inputting variable for each picture: -->
-        <img src="{{ url_for('static', filename = name )}}" width="250" height="300">
+        <img src="{{ url_for('static', filename = name + '.png' )}}" width="250" height="300">
 
 </div>
 <div>
@@ -20,8 +41,84 @@
 </div>
 
 <!-- Projects Block -->
-<div>
-    <h1>Project 1</h1>
+<div class="section--projects">
+    <div class="container--title">
+        <h1>PROJECTS</h1>
+    </div>
+    <div class="container center">
+        <div class="container--project" style="background-image: url(https://picsum.photos/300);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/400);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/500);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/600);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>Title</h2>
+                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
+                    <a href="http://google.com">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

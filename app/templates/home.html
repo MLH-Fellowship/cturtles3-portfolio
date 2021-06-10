@@ -1,34 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        div.container {
-          display:inline-block;
-        }
-    
-        h1, p {
-          text-align:center;
-        }
-      </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Turtles Team 3</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="../static/normalize.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="../static/home.css" rel="stylesheet">
 </head>
 <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <!--Expand navbar when on mobile-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Nav items-->
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-white" id="team" href="#meet-team">Meet the Team</a>
+                <a class="nav-item nav-link text-white" id="cris" href="/about/cristopher">Cristopher</a>
+                <a class="nav-item nav-link text-white" id="nhi" href="/about/nhi">Nhi</a>
+                <a class="nav-item nav-link text-white" id="yenyu" href="/about/yenyu">Yenyu</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Home Page -->
-<div>
-    <h1>Welcome</h1>
-</div>
-<div class="container">
-    <img src="{{ url_for('static', filename = 'Cristopher.png', name='cristopher') }}" width="250" height="300">
-    <a href = '/about/Cristopher'>Cristopher</a>
-</div>
-<div class="container">
-    <img src="{{ url_for('static', filename = 'Nhi.png', name='nhi') }}" width="250" height="300">
-    <a href = '/about/Nhi'>Nhi</a>
-</div>
-<div class="container">
-    <img src="{{ url_for('static', filename = 'Yenyu.png', name = 'yenyu') }}" width="250" height="300">
-    <a href = '/about/Yenyu'>Yenyu</a>
-</div>
+    <!--Hero-->
+    <div id="hero">
+        <video loop muted autoplay preload="auto">
+            <source src="../static/turtle-hd.mp4" type="video/mp4">
+            <!--Maybe insert a backup img?-->
+            Whoops! Your browser doesn't support the video tag.
+        </video>
 
+        <div class="text-overlay">
+            <h1>Welcome!</h1>
+            <h2>We are Team 3 of C Turtles</h2>
+        </div>
+    </div>
+
+    <!--Meet the Team-->
+    <div id="meet-team">
+        <h2 class="team-heading">Meet the Team</h2>
+        <div class="fellows-container">
+            <div class="row">
+                <div class="col-md-4 fellow">
+                    <img class="fellow-headshot" src="../static/Nhi.JPG" alt="Headshot of Cristopher" width="500" height="500">
+                    <h3>Cristopher Cejudo</h3>
+                    <a class="btn btn-warning btn-lg" href="/about/cristopher">View Portfolio</a>
+                </div>
+                <div class="col-md-4 fellow">
+                    <img class="fellow-headshot" src="../static/Nhi.JPG" alt="Headshot of Cristopher" width="500" height="500">
+                    <h3>Nhi Mai-Do</h3>
+                    <button type="button" class="btn btn-warning btn-lg" href="/about/nhi">View Portfolio</button>
+                </div>
+                <div class="col-md-4 fellow">
+                    <img class="fellow-headshot" src="../static/Nhi.JPG" alt="Headshot of Cristopher" width="500" height="500">
+                    <h3>Yenyu Huang</h3>
+                    <button type="button" class="btn btn-warning btn-lg" href="/about/yenyu">View Portfolio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    
+    <script src="../static/home.js"></script>
+    <!--Boostrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
