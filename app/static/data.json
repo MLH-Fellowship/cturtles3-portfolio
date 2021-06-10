@@ -47,19 +47,19 @@
             {
                 "title": "Knowledge Rally",
                 "description": "Knowledge Rally is a contest based on points where participants answer questions based on knowledge from various categories: History, Science, Training, Sports, and Geography.",
-                "image": "https://picsum.photos/302",
+                "image": "https://image.freepik.com/free-vector/game-night-neon-signs-style-text_118419-1572.jpg",
                 "link": "https://github.com/ccejudo"
             },
             {
                 "title": "S.E.R",
                 "description": "Multi platform mobille application that helps the users to become aware of how they dispose their waste and how to do it in a proper way",
-                "image": "https://picsum.photos/301",
+                "image": "https://www.recyclingbins-direct.co.uk/images/recycling-plastic-index-ii-1553027326.jpg",
                 "link": "https://github.com/ccejudo"
             },
             {
                 "title": "Face Alignment System",
                 "description": "Multipataform C++ project that align a face of an input image by identifying the eyes region to obtain a translation, scale and angle to transform the image into a normalized and rotated representation of the face.",
-                "image": "https://picsum.photos/300",
+                "image": "https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg",
                 "link": "https://github.com/ccejudo"
             }
         ],
