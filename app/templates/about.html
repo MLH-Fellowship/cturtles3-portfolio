@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/styles.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='about.css')}}"/> 
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <script>
@@ -22,22 +23,24 @@
     
     });
     </script>
+
 </head>
 <!-- About Me Block -->
 
 <!-- Please add your profile pic in static folder -->
 <!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
-<div> 
-    <!-- Having trouble inputting variable for each picture: -->
-        <img src="{{ url_for('static', filename = name + '.png' )}}" width="250" height="300">
+<div class="aboutUsContainer">
+    <div class="profilepic"> 
+        <!-- Having trouble inputting variable for each picture: -->
+            <img src="{{ url_for('static', filename = name + '.png' )}}" class="circleImg">
 
-</div>
-<div>
-    <h1>Hi! I'm {{name}}</h1>
-        <p style= "color: #2d334a;">
-        <!-- Summary --> 
-        I am an MLH fellow.
-        </p>
+    </div>
+    <div class="description">
+        <h1 style="color:#272343; font-weight:bold">Hi! I'm {{name|capitalize}}</h1>
+            <p style="color:#2d334a">
+            I am an MLH fellow.
+            </p>
+    </div>
 </div>
 
 <!-- Projects Block -->
