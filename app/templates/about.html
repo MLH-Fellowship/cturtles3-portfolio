@@ -8,19 +8,7 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <script>
-
-        $(function() {
-    
-    
-       var people = [];
-    
-       $.getJSON('../data.json', function(data) {
-            console.log(data);
-       }).fail(function(){
-            console.log("An error has occurred.")
-       });
-    
-    });
+        console.log(('{{ userData|tojson }}'))
     </script>
 </head>
 <!-- About Me Block -->
@@ -33,10 +21,10 @@
 
 </div>
 <div>
-    <h1>Hi! I'm {{name}}</h1>
+    <h1>Hi! I'm {{userData.name}}</h1>
         <p>
         <!-- Summary --> 
-        I am an MLH fellow.
+        {{userData.about}}
         </p>
 </div>
 
@@ -45,79 +33,20 @@
     <div class="container--title">
         <h1>PROJECTS</h1>
     </div>
+    </ul>
     <div class="container center">
-        <div class="container--project" style="background-image: url(https://picsum.photos/300);">
+        {% for project in userData.projects %}
+        <div class="container--project" style="background-image: url('{{ project.image }}');">
             <div class="container--info">
                 <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    <br/>
+                    <a href="{{ project.link }}">CHECK IT OUT</a>
                 </div>
             </div>
         </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/400);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/500);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/600);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
-        <div class="container--project" style="background-image: url(https://picsum.photos/700);">
-            <div class="container--info">
-                <div class="info--project">
-                    <h2>Title</h2>
-                    <p>Brief description of the project like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla metus id semper pharetra.</p>
-                    <a href="http://google.com">CHECK IT OUT</a>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
