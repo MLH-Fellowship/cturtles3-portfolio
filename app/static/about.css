@@ -1,11 +1,13 @@
 .aboutUsContainer {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
+
 }
 
 .profilepic {
     flex: 0;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: 50px;
 }
 
