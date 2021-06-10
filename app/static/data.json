@@ -7,13 +7,13 @@
             {
                 "title": "Formica",
                 "description": "An in-discord form service that allows you to fill in forms via a discord bot. You can create and manage forms, as well as manage your responses via a web interface.",
-                "image": "static/media/formica.png",
+                "image": "../static/media/formica.png",
                 "link": "https://github.com/felixfaisal/formica"
             },
             {
                 "title": "Don't Fear the Reaper!",
                 "description": "A 2D hide n' seek game, taking place in the grim reaper's catacombs. You can play as the grim reaper where the objective is to hunt down the TBD (To Be Deceased) and harvest their soul. Or you can play as the TBD, with a goal of escaping the catacombs before the reaper finds you.",
-                "image": "static/media/reaper.png",
+                "image": "../static/media/reaper.png",
                 "link": "https://github.com/n-maido/dont-fear-the-reaper"
             },
             {

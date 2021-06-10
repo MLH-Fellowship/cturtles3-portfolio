@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
-<head>
+{% extends "base.html" %}
+{% block head %}
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/styles.css" type="text/css">
+    <link rel="stylesheet" href="../static/styles/styles.css" type="text/css">
     <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='about.css')}}"/> 
+    <!--Plain styling-->
+    <link href="../static/styles/home.css" rel="stylesheet">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <script>
         console.log(('{{ userData|tojson }}'))
     </script>
+{% endblock %}
 
-</head>
+{% block content %}
 <!-- About Me Block -->
 
 <!-- Please add your profile pic in static folder -->
@@ -20,12 +21,12 @@
 <div class="aboutUsContainer">
     <div class="profilepic"> 
         <!-- Having trouble inputting variable for each picture: -->
-            <img src="{{ url_for('static', filename = name + '.png' )}}" class="circleImg">
+            <img src="{{ url_for('static', filename = 'media/' + name + '.png' )}}" class="circleImg">
     </div>
     <div class="description">
         <h1 style="color:#272343; font-weight:bold">Hi! I'm {{name|capitalize}}</h1>
             <p style="color:#2d334a">
-            
+                {{ userData.about }}
             </p>
     </div>
 </div>
@@ -51,6 +52,4 @@
         {% endfor %}
     </div>
 </div>
-
-</body>
-</html>
+{% endblock %}
