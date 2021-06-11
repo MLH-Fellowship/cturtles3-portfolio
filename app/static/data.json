@@ -76,8 +76,7 @@
                 "val" : "https://twitter.com/home"
             },
             {
-                "name" : "email",
-                "val" : "yenyu.huang99@gmail.com"
+                "name" : "yenyu.huang99@gmail.com"
             }
         ]
     },
@@ -114,6 +113,9 @@
             {
                 "name" : "github",
                 "val" : "https://github.com/ccejudo"
+            },
+            {
+                "name" : "cristopher.cm1999@gmail.com"
             }
         ]
     }
