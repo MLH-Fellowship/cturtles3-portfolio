@@ -7,7 +7,19 @@ body{
     flex-wrap: wrap;
 }
 
-.container{
+.bg-yellow{
+    background-color: #fad400 !important;
+}
+
+.divider--about{
+    width: 80%;
+    margin: auto;
+    border: 0.5px solid #272343;
+    opacity: 100%;
+    border-radius: 5px;
+}
+
+.container--about{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +58,7 @@ body{
     padding: 3%;
     text-align: center;
     color: white;
+    font-size: 0.9rem;
 }
 
 .info--project a{
