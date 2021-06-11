@@ -27,7 +27,7 @@
 <div class="aboutUsContainer">
     <div class="profilepic"> 
         <!-- Having trouble inputting variable for each picture: -->
-            <img src="{{ url_for('static', filename = '../static/media/' + name + '.png' )}}" class="circleImg">
+            <img src="{{ url_for('static', filename = '../static/media/' + name.capitalize() + '.png' )}}" class="circleImg">
     </div>
     <div class="description">
         <h1 style="color:#272343; font-weight:bold">Hi! I'm {{name|capitalize}}</h1>
