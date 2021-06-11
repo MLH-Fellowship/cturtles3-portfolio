@@ -48,10 +48,10 @@ To build the website, we used:
  - Taking inspiration from what we learned while making this portfolio and implementing that in our future portfolios
  - Improving the responsiveness of the website
 
-Below explains how to install Flask in a virtual testing environment and create a simple Flask application only on on Linux and MacOS.
-### Prereq: **Make sure you have python3 and pip installed**
 
 ## Installation
+Below explains how to install Flask in a virtual testing environment and create a simple Flask application only on on Linux and MacOS.
+### Prereq: **Make sure you have python3 and pip installed**
 
 ## Step 1: Install Virtual Environment
 Install virtualenv on MacOS
