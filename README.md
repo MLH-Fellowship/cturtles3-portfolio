@@ -1,5 +1,6 @@
 # Hawksbill-portfolio
 The portfolio website for Team Hawksbills of the C Turtles (Pod 3.3.0)!
+  To view our website, please follow instructions under "Installation" below.
 
 ## Inspiration 🐢
 The theme of our website is inspired by our pod name, the C Turtles. To reflect this, we implemented a swimming turtle on the home screen to greet users when they visit our page.
