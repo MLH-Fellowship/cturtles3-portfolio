@@ -73,12 +73,12 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                Contact {{ allUsers[user] }}
+                Contact {{ allUsers[user].name.split()[0] }} <!--Display the first name only-->
                 </h6>
-                {% for link in user.social %}
+                {% for link in allUsers[user].social %}
                 <p>
                     <a href="{{ link.val }}" class="me-4 text-reset">
-                        {{link['name']}}
+                        {{link['name']|capitalize}}
                     </a>
                 </p>
                 {% endfor %}                             
