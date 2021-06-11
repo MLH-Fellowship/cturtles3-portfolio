@@ -76,7 +76,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 2rem; /* mobile first development */
     font-weight: 700;
-    
+    margin: 0;
 }
 
 #hero .text-overlay h2{
