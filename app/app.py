@@ -3,7 +3,7 @@ import os
 import json
 
 app = Flask(__name__)
-data_file = open('./static/data.json')
+data_file = open('./app/static/data.json')
 data = json.load(data_file)
 #data_file.close()
 
