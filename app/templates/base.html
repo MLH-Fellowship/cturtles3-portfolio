@@ -44,24 +44,11 @@
         </div>
     </nav>
 
+    <!--Content-->
     <div class="content">{% block content%}{% endblock %}</div>
 
-    
-
-    <!--Footer-->
-    <!-- <footer id="footer">
-        This website was created with Flask as a project for the MLH Fellowship
-    </footer> -->
-    <!-- <div id="footer-container">
-        <div class="footer">
-            <div class="footer-heading footer-1">
-
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="footer">{% block test %} {% endblock %}</div> -->
-     <!-- Footer -->
-     <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section
         class="d-flex justify-content-center justify-content-lg-between p-4 "
@@ -81,18 +68,17 @@
                 </h6>
 
             </div>
-    
-            {% for user in userData %}
+            <!--Display social links for each user-->
+            {% for user in allUsers %}
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                Contact {{ user.name }}
+                Contact {{ allUsers[user] }}
                 </h6>
                 {% for link in user.social %}
                 <p>
                     <a href="{{ link.val }}" class="me-4 text-reset">
-                        <i class="fab fa-linkedin"></i>
-                        {{ link.name }}
+                        {{link['name']}}
                     </a>
                 </p>
                 {% endfor %}                             

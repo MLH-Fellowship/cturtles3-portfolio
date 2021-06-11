@@ -10,14 +10,15 @@ data_file.close()
 #Create URL routes
 @app.route('/')
 def home():
-    userData = data
-    return render_template("home.html", userData=userData)
+    allUsers = data
+    return render_template("home.html", allUsers=allUsers)
 
 #Create URL for each members
 @app.route('/about/<string:name>')
 def about(name):
     userData = data[name]
-    return render_template("about.html", name=name, userData=userData)
+    allUsers = data
+    return render_template("about.html", name=name, userData=userData, allUsers=allUsers)
 
 
 if __name__ == "__main__":
