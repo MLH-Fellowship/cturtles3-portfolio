@@ -193,10 +193,11 @@
     color: var(--dark-text);
 }
 
-.button {
+.btn--home {
     background-color: #ffc107;
+    text-decoration: none;
     border: none;
-    color: black;
+    color: #272343;
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
@@ -205,4 +206,9 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+}
+
+.btn--home:hover{
+    background-color: #272343;
+    color: #fffffe;
 }
