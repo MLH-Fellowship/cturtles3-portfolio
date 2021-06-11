@@ -36,21 +36,45 @@
     },
 
     "yenyu" : {
-        "name" : "",
-        "about" : "",
+        "name" : "Yenyu Huang",
+        "about" : "Passionate in developing skills as an aspiring Production Engineer. After graduating in Computer Science and Biotechnology, Yenyu has been branching out from computer networks to site reliability to bring services to satisfied customers. She is truly honored to be on this journey as a fellow at MLH. On her free time, she enjoys driving, nature walks and scenery. ",
         "image" : "",
         "projects" : [
             {
-                "title": "",
-                "description": "",
-                "image": "",
-                "link": ""
+                "title": "Social T",
+                "description": "Social media app with searchable tweets that can be accessed any time",
+                "image": "https://www.nicepng.com/png/detail/119-1195925_hashtags-blue-hashtag-png.png",
+                "link": "https://github.com/YenyuHuang"
+            },
+            {
+                "title": "NutriDoc",
+                "description": "Provide informational healthy dish that are suitable for specific severe health conditions, available for low-income community",
+                "image": "https://img.freepik.com/free-photo/healthy-food-medical-equipment_23-2148108966.jpg?size=626&ext=jpg",
+                "link": "https://github.com/YenyuHuang"
+            },
+            {
+                "title": "iCalendar",
+                "description": "A user-friendly calendar that alerts reminders when you approach a location for forgetful person.",
+                "image": "https://www.drupal.org/files/project-images/drupal-module-calendar.jpg",
+                "link": "https://github.com/YenyuHuang"
             }
         ],
         "social" : [
             {
-                "name" : "",
-                "val" : ""
+                "name" : "linkedin",
+                "val" : "https://www.linkedin.com/in/yenyuhuang/"
+            },
+            {
+                "name" : "github",
+                "val" : "https://github.com/YenyuHuang"
+            },
+            {
+                "name" : "twitter",
+                "val" : "https://twitter.com/home"
+            },
+            {
+                "name" : "email",
+                "val" : "yenyu.huang99@gmail.com"
             }
         ]
     },

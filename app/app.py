@@ -1,11 +1,11 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, json
 import os
 import json
 
 app = Flask(__name__)
 data_file = open('./static/data.json')
 data = json.load(data_file)
-data_file.close()
+#data_file.close()
 
 #Create URL routes
 @app.route('/')
@@ -21,6 +21,7 @@ def home():
 def about(name):
     userData = data[name]
     return render_template("about.html", name=name, userData=userData)
+
 
 
 if __name__ == "__main__":
