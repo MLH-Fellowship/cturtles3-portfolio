@@ -9,18 +9,16 @@ data = json.load(data_file)
 
 #Create URL routes
 @app.route('/')
-def hello():
-    return render_template("home.html")
-
-@app.route('/home')
 def home():
-    return render_template("home.html")
+    allUsers = data
+    return render_template("home.html", allUsers=allUsers)
 
 #Create URL for each members
 @app.route('/about/<string:name>')
 def about(name):
     userData = data[name]
-    return render_template("about.html", name=name, userData=userData)
+    allUsers = data
+    return render_template("about.html", name=name, userData=userData, allUsers=allUsers)
 
 
 
