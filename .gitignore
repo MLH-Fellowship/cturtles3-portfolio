@@ -17,3 +17,5 @@ build/
 python3-virtualenv
 
 .DS_Store
+
+flask.sqlite
