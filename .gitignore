@@ -16,4 +16,6 @@ build/
 
 python3-virtualenv
 
-.DS_Storeflask.sqlite
+.DS_Store
+
+flask.sqlite
