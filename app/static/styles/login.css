@@ -1,0 +1,30 @@
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: yellow;
+}
+
+h3{
+	color: orange;
+}
+
+.form--wrapper{
+	display: flex;
+	padding: 10% 30%;
+	justify-content: center;
+	align-items: center;
+}
+
+.form--container{
+	display: block;
+	width: 100%;
+	padding: 10%;
+	background-color: white;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.form--container form{
+	margin: auto;
+	width: 70%;
+}
+

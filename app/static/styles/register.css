@@ -1,0 +1,23 @@
+.form--container input{
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form--container label{
+    font-size: 1rem;
+}
+
+.button{
+	text-decoration: none;
+	padding: 3%;
+	border-radius: 10px;
+	background-color: red;
+	border: black;
+	color: black;
+	font-size: 1 rem;
+}
+
+.button:hover{
+	background-color: gray;
+	color: white;
+}
