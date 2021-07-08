@@ -1,5 +1,8 @@
 click==8.0.1
+<<<<<<< HEAD
 #dataclasses==0.8
+=======
+>>>>>>> main
 Flask==2.0.1
 importlib-metadata==4.5.0
 itsdangerous==2.0.1
@@ -8,5 +11,10 @@ MarkupSafe==2.0.1
 typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 zipp==3.4.1
+<<<<<<< HEAD
 
 gunicorn==20.1.0
+=======
+gunicorn==20.1.0
+
+>>>>>>> main
