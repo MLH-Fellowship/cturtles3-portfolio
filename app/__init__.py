@@ -6,7 +6,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from app.db import get_db
 
 app = Flask(__name__)
-data_file = open('/home/centos/cturtles3-portfolio/app/static/data.json')
+data_file = open('static/data.json')
 data = json.load(data_file)
 #data_file.close()
 
@@ -34,23 +34,23 @@ def register():
         elif not password:
             error = 'Password is required.'
         elif db.execute(
-            'SELECT id FROM user WHERE username = ?', (username,)
+	        'SELECT id FROM user WHERE username = ?', (username,)
         ).fetchone() is not None:
-            error = f"User {username} is already registered."
+            error = "User {username} is already registered."
 
         if error is None:
             db.execute(
-                'INSERT INTO user (username, password) VALUES (?, ?)',
+	            'INSERT INTO user (username, password) VALUES (?, ?)',
                 (username, generate_password_hash(password))
             )
             db.commit()
-            return f"User {username} created successfully"
+            return f"User {username} created successfully\n"
         else:
             return error, 418
 
     ## TODO: Return a restister page
-    return "Register Page not yet implemented", 501
-
+    #return "Register Page not yet implemented", 501
+    return render_template("register.html")
 
 @app.route('/login', methods=('GET', 'POST'))
 def login():
@@ -59,21 +59,23 @@ def login():
         password = request.form.get('password')
         db = get_db()
         error = None
-		user = db.execute(
-		'SELECT * FROM user WHERE username = ?', (username,)).fetchone()
-		
-		if user is None:
-			error = 'Incorrect username.'
-		elif not check_password_hash(user['password'], password):
-			error = 'Incorrect password.'
+        user = db.execute(
+            'SELECT * FROM user WHERE username = ?', (username,)
+        ).fetchone()
+                
+        if user is None:
+            error = 'Incorrect username.'
+        elif not check_password_hash(user['password'], password):
+            error = 'Incorrect password.'
 
-		if error is None:
-			return "Login Successful", 200
-		else:
-			return error, 418
+        if error is None:
+            return "Login Successful\n", 200
+        else:
+            return error, 418
 	
-	## TODO: Return a login page
-	return "Login Page not yet implemented", 501    
+    ## TODO: Return a login page:
+    #return "Login Page not yet implemented", 501 
+    return render_template("login.html")   
 
 @app.route('/health')
 def starting_url():
