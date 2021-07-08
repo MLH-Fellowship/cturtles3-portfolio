@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    # Path to dockerfile.
+    # '.' represents the current directory in which
+    # docker-compose.yml is present.
+    build: .
+
+    # Mapping of container port to host
+    
+    ports:
+      - "80:80"
+    restart: always
+    env_file:
+      - .env
+    # Mount volume 
+    volumes:
+      - ./flask.sqlite:/myportfolio/flask.sqlite

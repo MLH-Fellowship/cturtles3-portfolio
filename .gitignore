@@ -1,4 +1,4 @@
-.env
+*.env
 __pycache__
 
 venv/
@@ -17,3 +17,5 @@ build/
 python3-virtualenv
 
 .DS_Store
+
+flask.sqlite
