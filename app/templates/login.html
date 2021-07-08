@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	{{ toastr.include_jquery() }}
-	{{ toastr.include_toastr_css()}}
-	{{ toastr.message() }}
+
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" context="IE-edge">
@@ -13,7 +11,6 @@
 
 </head>
 <body>
-	{{ toastr.include_toastr_js() }}
     	<div class='form--wrapper'>
 		<div class='form--container'>
 			<h2> Login </h2>
@@ -24,7 +21,7 @@
 				<input type="psasword" id="password" name="password" /><br><br>
 				<input class='button 'type="submit" id="send-signup" name="signup" value="Log In" /><br>
 			</form>
-			<p> Create an account <a href="/register">Sign Up</a></p>
+			<p> Create an account <a href="/login">Sign Up Here</a></p>
 		</div>
 	</div>
 </body>
