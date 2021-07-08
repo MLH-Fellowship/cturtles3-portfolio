@@ -1,16 +1,61 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "base.html" %}
+{% block head %}
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='about.css')}}"/> 
+    <link rel="stylesheet" href="../static/styles/styles.css" type="text/css">
 
+    <!--Plain styling-->
+    <link href="../static/styles/home.css" rel="stylesheet">
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+        console.log(('{{ userData|tojson }}'))
+    </script>
+{% endblock %}
+
+{% block content %}
 <!-- About Me Block -->
-<div>
-    <h1>Hi! I'm **Name***</h1>
-</div>
 
+<!-- Please add your profile pic in static folder -->
+<!-- Use url_for to generate the correct URLs with Jinja2 templates: -->
+<div class="aboutUsContainer">
+    <div class="profilepic"> 
+        <!-- Having trouble inputting variable for each picture: -->
+            <img src="{{ url_for('static', filename = 'media/' + name + '.png' )}}" class="circleImg">
+    </div>
+    <div class="description">
+        <h1 style="color:#272343; font-weight:bold">Hi! I'm {{name|capitalize}}</h1>
+            <p style="color:#2d334a">
+                {{ userData.about }}
+            </p>
+    </div>
+</div>
+<hr class="divider--about"/>
 <!-- Projects Block -->
-<div>
-    <h1>Project 1</h1>
+<div class="section--projects">
+    <div class="container--title">
+        <h1>PROJECTS</h1>
+    </div>
+    </ul>
+    <div class="container--about center">
+        {% for project in userData.projects %}
+        <div class="container--project" style="background-image: url('{{ project.image }}');">
+            <div class="container--info">
+                <div class="info--project">
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    <br/>
+                    <a href="{{ project.link }}">CHECK IT OUT</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-</body>
-</html>
+{% endblock %}
