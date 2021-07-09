@@ -1,18 +1,34 @@
-version: '3'
+version: "3"
 services:
   web:
-    # Path to dockerfile.
-    # '.' represents the current directory in which
-    # docker-compose.yml is present.
     build: .
-
-    # Mapping of container port to host
-    
-    ports:
-      - "80:80"
     restart: always
     env_file:
       - .env
-    # Mount volume 
     volumes:
-      - ./flask.sqlite:/myportfolio/flask.sqlite
+      - .:/myportfolio
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
+
+  nginx:
+    image: jonasal/nginx-certbot:latest
+    restart: unless-stopped
+    env_file:
+      - ./nginx-certbot.env
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /etc/letsencrypt/:/etc/letsencrypt
+      - ./user_conf.d:/etc/nginx/user_conf.d
+    depends_on:
+      - web
+
+volumes:
+  nginx_secrets:
